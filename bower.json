@@ -1,0 +1,22 @@
+{
+  "name": "sass",
+  "version": "0.0.1",
+  "homepage": "https://github.com/changgyun/template",
+  "authors": [
+    "ChangGyun Woo <cg25.woo@samsung.com>"
+  ],
+  "description": "sass",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "highlightjs": "~9.0.0"
+  }
+}
