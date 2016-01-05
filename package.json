@@ -17,7 +17,8 @@
     "browser-sync": "~2.10.1",
     "gulp-jade": "~1.1.0",
     "gulp-jade-usemin": "~1.1.0",
-    "sassdoc": "~2.1.19"
+    "sassdoc": "~2.1.19",
+    "fs": "0.0.2"
   },
   "scripts": {
     "test": "gulp sass_test",
