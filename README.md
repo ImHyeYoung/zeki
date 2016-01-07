@@ -2,11 +2,10 @@ Zeki
 ====
 It had organized the basic style elements that can be used by default in the Web project
 
-(https://img.shields.io/magnumci/ci/96ffb83fa700f069024921b0702e76ff.svg?style=flat)
-(https://img.shields.io/node/v/gh-badges.svg?style=flat)
-(https://img.shields.io/npm/v/npm.svg?style=flat)
-(https://img.shields.io/bower/v/bootstrap.svg?style=flat)
-
+[!(https://img.shields.io/magnumci/ci/96ffb83fa700f069024921b0702e76ff.svg?style=flat)]
+[!(https://img.shields.io/node/v/gh-badges.svg?style=flat)]
+[!(https://img.shields.io/npm/v/npm.svg?style=flat)]
+[!(https://img.shields.io/bower/v/bootstrap.svg?style=flat)]
 
 **Use From the CDN:**
 
