@@ -1,0 +1,526 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Sass - v0.0.1</title><link rel="stylesheet" href="assets/css/main.css"><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Sass - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>SassDoc&#39;s default theme</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Sass - 0.0.1</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="button"><a href="#button">button</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="button-variable"><a href="#button-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="button-padding" data-type="variable"><a href="#button-variable-button-padding">button-padding</a></li><li class="sidebar__item sassdoc__item" data-name="button-margin" data-type="variable"><a href="#button-variable-button-margin">button-margin</a></li><li class="sidebar__item sassdoc__item" data-name="button-fill" data-type="variable"><a href="#button-variable-button-fill">button-fill</a></li><li class="sidebar__item sassdoc__item" data-name="button-background" data-type="variable"><a href="#button-variable-button-background">button-background</a></li><li class="sidebar__item sassdoc__item" data-name="button-background-hover" data-type="variable"><a href="#button-variable-button-background-hover">button-background-hover</a></li><li class="sidebar__item sassdoc__item" data-name="button-color" data-type="variable"><a href="#button-variable-button-color">button-color</a></li><li class="sidebar__item sassdoc__item" data-name="button-color-alt" data-type="variable"><a href="#button-variable-button-color-alt">button-color-alt</a></li><li class="sidebar__item sassdoc__item" data-name="button-radius" data-type="variable"><a href="#button-variable-button-radius">button-radius</a></li><li class="sidebar__item sassdoc__item" data-name="button-sizes" data-type="variable"><a href="#button-variable-button-sizes">button-sizes</a></li><li class="sidebar__item sassdoc__item" data-name="button-opacity-disabled" data-type="variable"><a href="#button-variable-button-opacity-disabled">button-opacity-disabled</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="button-mixin"><a href="#button-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="button-expand" data-type="mixin"><a href="#button-mixin-button-expand">button-expand</a></li><li class="sidebar__item sassdoc__item" data-name="button-style" data-type="mixin"><a href="#button-mixin-button-style">button-style</a></li><li class="sidebar__item sassdoc__item" data-name="button-hollow" data-type="mixin"><a href="#button-mixin-button-hollow">button-hollow</a></li><li class="sidebar__item sassdoc__item" data-name="button-disabled" data-type="mixin"><a href="#button-mixin-button-disabled">button-disabled</a></li><li class="sidebar__item sassdoc__item" data-name="button-dropdown" data-type="mixin"><a href="#button-mixin-button-dropdown">button-dropdown</a></li><li class="sidebar__item sassdoc__item" data-name="button" data-type="mixin"><a href="#button-mixin-button">button</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="functions"><a href="#functions">functions</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="functions-mixin"><a href="#functions-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="css-triangle" data-type="mixin"><a href="#functions-mixin-css-triangle">css-triangle</a></li><li class="sidebar__item sassdoc__item" data-name="disable-mouse-outline" data-type="mixin"><a href="#functions-mixin-disable-mouse-outline">disable-mouse-outline</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">general</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-variable"><a href="#undefined-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="global-font-size" data-type="variable"><a href="#undefined-variable-global-font-size">global-font-size</a></li><li class="sidebar__item sassdoc__item" data-name="global-width" data-type="variable"><a href="#undefined-variable-global-width">global-width</a></li><li class="sidebar__item sassdoc__item" data-name="global-lineheight" data-type="variable"><a href="#undefined-variable-global-lineheight">global-lineheight</a></li><li class="sidebar__item sassdoc__item" data-name="primary-color" data-type="variable"><a href="#undefined-variable-primary-color">primary-color</a></li><li class="sidebar__item sassdoc__item" data-name="secondary-color" data-type="variable"><a href="#undefined-variable-secondary-color">secondary-color</a></li><li class="sidebar__item sassdoc__item" data-name="success-color" data-type="variable"><a href="#undefined-variable-success-color">success-color</a></li><li class="sidebar__item sassdoc__item" data-name="warning-color" data-type="variable"><a href="#undefined-variable-warning-color">warning-color</a></li><li class="sidebar__item sassdoc__item" data-name="alert-color" data-type="variable"><a href="#undefined-variable-alert-color">alert-color</a></li><li class="sidebar__item sassdoc__item" data-name="light-gray" data-type="variable"><a href="#undefined-variable-light-gray">light-gray</a></li><li class="sidebar__item sassdoc__item" data-name="medium-gray" data-type="variable"><a href="#undefined-variable-medium-gray">medium-gray</a></li><li class="sidebar__item sassdoc__item" data-name="dark-gray" data-type="variable"><a href="#undefined-variable-dark-gray">dark-gray</a></li><li class="sidebar__item sassdoc__item" data-name="black" data-type="variable"><a href="#undefined-variable-black">black</a></li><li class="sidebar__item sassdoc__item" data-name="white" data-type="variable"><a href="#undefined-variable-white">white</a></li><li class="sidebar__item sassdoc__item" data-name="body-background" data-type="variable"><a href="#undefined-variable-body-background">body-background</a></li><li class="sidebar__item sassdoc__item" data-name="body-font-color" data-type="variable"><a href="#undefined-variable-body-font-color">body-font-color</a></li><li class="sidebar__item sassdoc__item" data-name="body-font-family" data-type="variable"><a href="#undefined-variable-body-font-family">body-font-family</a></li><li class="sidebar__item sassdoc__item" data-name="body-antialiased" data-type="variable"><a href="#undefined-variable-body-antialiased">body-antialiased</a></li><li class="sidebar__item sassdoc__item" data-name="global-margin" data-type="variable"><a href="#undefined-variable-global-margin">global-margin</a></li><li class="sidebar__item sassdoc__item" data-name="global-padding" data-type="variable"><a href="#undefined-variable-global-padding">global-padding</a></li><li class="sidebar__item sassdoc__item" data-name="global-weight-normal" data-type="variable"><a href="#undefined-variable-global-weight-normal">global-weight-normal</a></li><li class="sidebar__item sassdoc__item" data-name="global-weight-bold" data-type="variable"><a href="#undefined-variable-global-weight-bold">global-weight-bold</a></li><li class="sidebar__item sassdoc__item" data-name="global-radius" data-type="variable"><a href="#undefined-variable-global-radius">global-radius</a></li><li class="sidebar__item sassdoc__item" data-name="global-text-direction" data-type="variable"><a href="#undefined-variable-global-text-direction">global-text-direction</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-name="normalize" data-type="mixin"><a href="#undefined-mixin-normalize">normalize</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="button"><div class="container">button</div></h1><section class="main__sub-section" id="button-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="button-variable-button-padding"><h3 class="item__heading"><a class="item__name" href="#variable-button-padding">button-padding</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$button-padding: 0.85em 1em !default;</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L11-L11" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Padding inside buttons.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-button-dropdown"><code>button-dropdown</code></a></li></ul></section><section class="main__item container item" id="button-variable-button-margin"><h3 class="item__heading"><a class="item__name" href="#variable-button-margin">button-margin</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$button-margin: 0 0 $global-margin 0 !default;</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L15-L15" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Margin around buttons.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-button-expand"><code>button-expand</code></a></li></ul></section><section class="main__item container item" id="button-variable-button-fill"><h3 class="item__heading"><a class="item__name" href="#variable-button-fill">button-fill</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$button-fill: solid !default;</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L19-L19" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Default fill for buttons. Can either be <code>solid</code> or <code>hollow</code>.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Keyword</code></p></section><section class="main__item container item" id="button-variable-button-background"><h3 class="item__heading"><a class="item__name" href="#variable-button-background">button-background</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$button-background: $primary-color !default;</code></pre><span class="color-preview--block" style="background: #2199e8"></span> <a href="https://github.com/conrad-ko/zeki/components/_button.scss#L23-L23" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Default background color for buttons.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="button-variable-button-background-hover"><h3 class="item__heading"><a class="item__name" href="#variable-button-background-hover">button-background-hover</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$button-background-hover: scale-color($button-background, $lightness: -15%) !default;</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L27-L27" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Background color on hover for buttons.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="button-variable-button-color"><h3 class="item__heading"><a class="item__name" href="#variable-button-color">button-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$button-color: #fff !default;</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L31-L31" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Font color for buttons.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-button-style"><code>button-style</code></a></li></ul></section><section class="main__item container item" id="button-variable-button-color-alt"><h3 class="item__heading"><a class="item__name" href="#variable-button-color-alt">button-color-alt</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$button-color-alt: #000 !default;</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L35-L35" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Font color for buttons, if the background is light.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-button-style"><code>button-style</code></a></li></ul></section><section class="main__item container item" id="button-variable-button-radius"><h3 class="item__heading"><a class="item__name" href="#variable-button-radius">button-radius</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$button-radius: $global-radius !default;</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L39-L39" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Border radius for buttons, defaulted to global-radius.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="button-variable-button-sizes"><h3 class="item__heading"><a class="item__name" href="#variable-button-sizes">button-sizes</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$button-sizes: (
+        tiny: 0.6rem,
+        small: 0.75rem,
+        default: 0.9rem,
+        large: 1.25rem,
+) !default;</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L43-L48" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Sizes for buttons.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Map</code></p></section><section class="main__item container item" id="button-variable-button-opacity-disabled"><h3 class="item__heading"><a class="item__name" href="#variable-button-opacity-disabled">button-opacity-disabled</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$button-opacity-disabled: 0.25 !default;</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L52-L52" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>opacity for a disabled button.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-button-disabled"><code>button-disabled</code></a></li></ul></section></section><section class="main__sub-section" id="button-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="button-mixin-button-expand"><h3 class="item__heading"><a class="item__name" href="#mixin-button-expand">button-expand</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-expand($expand: true) { 
+  @if $expand {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @else {
+    display: inline-block;
+    width: auto;
+    margin: $button-margin;
+  }
+ }" data-collapsed="@mixin button-expand($expand: true) { ... }"><code>@mixin button-expand($expand: true) { ... }</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L77-L89" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Expands a button to make it full-width.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$expand</code></th><td data-label="desc"><p>Set to <code>true</code> to enable the expand behavior. Set to <code>false</code> to reverse this behavior.</p></td><td data-label="type"><code>Boolean</code></td><td data-label="default"><code>true</code></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#variable-button-margin"><code>button-margin</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-button"><code>button</code></a></li></ul></section><section class="main__item container item" id="button-mixin-button-style"><h3 class="item__heading"><a class="item__name" href="#mixin-button-style">button-style</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-style($background: $button-background, $background-hover: $button-background-hover, $color: $button-color) { 
+  @if $color == auto {
+    $color: isitlight($background);
+  }
+
+  @if $background-hover == auto {
+    $background-hover: scale-color($background, $lightness: -20%);
+  }
+
+  @if lightness($background) &gt;= 70% {
+    $color: $button-color-alt;
+  }
+  @else {
+    $color: $button-color;
+  }
+
+  background-color: $background;
+  color: $color;
+
+  &amp;:hover, &amp;:focus {
+    background-color: $background-hover;
+    color: $color;
+  }
+ }" data-collapsed="@mixin button-style($background: $button-background, $background-hover: $button-background-hover, $color: $button-color) { ... }"><code>@mixin button-style($background: $button-background, $background-hover: $button-background-hover, $color: $button-color) { ... }</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L95-L122" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Sets the visual style of a button.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$background</code></th><td data-label="desc"><p>Background color of the button.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#2199e8; color: #fff">$button-background</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-hover</code></th><td data-label="desc"><p>Background color of the button on hover. Set to <code>auto</code> to have the mixin automatically generate a hover color.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code>$button-background-hover</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>Text color of the button. Set to <code>auto</code> to automatically generate a color based on the background color.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#fff; color: #000">$button-color</code></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#variable-button-color-alt"><code>button-color-alt</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#variable-button-color"><code>button-color</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-button"><code>button</code></a></li></ul></section><section class="main__item container item" id="button-mixin-button-hollow"><h3 class="item__heading"><a class="item__name" href="#mixin-button-hollow">button-hollow</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-hollow() { 
+  &amp;,
+  &amp;:hover, &amp;:focus {
+    background-color: transparent;
+  }
+ }" data-collapsed="@mixin button-hollow() { ... }"><code>@mixin button-hollow() { ... }</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L125-L130" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Removes background fill on hover and focus for hollow buttons.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-button"><code>button</code></a></li></ul></section><section class="main__item container item" id="button-mixin-button-disabled"><h3 class="item__heading"><a class="item__name" href="#mixin-button-disabled">button-disabled</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-disabled() { 
+  opacity: $button-opacity-disabled;
+  cursor: not-allowed;
+  pointer-events: none;
+ }" data-collapsed="@mixin button-disabled() { ... }"><code>@mixin button-disabled() { ... }</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L145-L149" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Adds disabled styles to a button by fading the element, reseting the cursor, and disabling pointer events.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#variable-button-opacity-disabled"><code>button-opacity-disabled</code></a></li></ul></section><section class="main__item container item" id="button-mixin-button-dropdown"><h3 class="item__heading"><a class="item__name" href="#mixin-button-dropdown">button-dropdown</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-dropdown($size: 0.4em, $color: white, $offset: $button-padding) { 
+  &amp;::after {
+    @include css-triangle($size, $color, down);
+    position: relative;
+    top: 0.4em; // Aligns the arrow with the text of the button
+    float: #{$global-right};
+    margin-#{$global-left}: get-side($button-padding, right);
+    display: inline-block;
+  }
+ }" data-collapsed="@mixin button-dropdown($size: 0.4em, $color: white, $offset: $button-padding) { ... }"><code>@mixin button-dropdown($size: 0.4em, $color: white, $offset: $button-padding) { ... }</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L155-L168" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Adds a dropdown arrow to a button.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><p>Size of the arrow. We recommend using an <code>em</code> value so the triangle scales when used inside different sizes of buttons.</p></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>0.4em</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>Color of the arrow.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:white; color: #000">white</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$offset</code></th><td data-label="desc"><p>Distance between the arrow and the text of the button. Defaults to whatever the right padding of a button is.</p></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>$button-padding</code></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#mixin-css-triangle"><code>css-triangle</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#variable-button-padding"><code>button-padding</code></a></li></ul></section><section class="main__item container item" id="button-mixin-button"><h3 class="item__heading"><a class="item__name" href="#mixin-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button($expand: false, $background: $button-background, $background-hover: $button-background-hover, $color: $button-color, $style: solid) { 
+  @include button-base;
+
+  @if $style == solid {
+    @include button-style($background, $background-hover, $color);
+  }
+  @else if $style == hollow {
+    @include button-hollow;
+    @include button-hollow-style($background);
+  }
+
+  @if $expand {
+    @include button-expand;
+  }
+ }" data-collapsed="@mixin button($expand: false, $background: $button-background, $background-hover: $button-background-hover, $color: $button-color, $style: solid) { ... }"><code>@mixin button($expand: false, $background: $button-background, $background-hover: $button-background-hover, $color: $button-color, $style: solid) { ... }</code></pre><a href="https://github.com/conrad-ko/zeki/components/_button.scss#L176-L196" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Adds all styles for a button. For more granular control over styles, use the individual button mixins.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$expand</code></th><td data-label="desc"><p>Set to <code>true</code> to make the button full-width.</p></td><td data-label="type"><code>Boolean</code></td><td data-label="default"><code>false</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$background</code></th><td data-label="desc"><p>Background color of the button.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#2199e8; color: #fff">$button-background</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-hover</code></th><td data-label="desc"><p>Background color of the button on hover. Set to <code>auto</code> to have the mixin automatically generate a hover color.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code>$button-background-hover</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>Text color of the button. Set to <code>auto</code> to automatically generate a color based on the background color.</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code class="color-preview--inline" style="background:#fff; color: #000">$button-color</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$style</code></th><td data-label="desc"><p>Set to <code>hollow</code> to create a hollow button. The color defined in <code>$background</code> will be used as the primary color of the button.</p></td><td data-label="type"><code>Keyword</code></td><td data-label="default"><code>solid</code></td></tr></tbody></table><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#mixin-button-style"><code>button-style</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#mixin-button-hollow"><code>button-hollow</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#mixin-button-expand"><code>button-expand</code></a></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="functions"><div class="container">functions</div></h1><section class="main__sub-section" id="functions-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="functions-mixin-css-triangle"><h3 class="item__heading"><a class="item__name" href="#mixin-css-triangle">css-triangle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) { 
+  content: &#39;&#39;;
+  display: block;
+  width: 0;
+  height: 0;
+  border: inset $triangle-size;
+
+  @if ($triangle-direction == down) {
+    border-color: $triangle-color transparent transparent;
+    border-top-style: solid;
+  }
+  @if ($triangle-direction == up) {
+    border-color: transparent transparent $triangle-color;
+    border-bottom-style: solid;
+  }
+  @if ($triangle-direction == right) {
+    border-color: transparent transparent transparent $triangle-color;
+    border-left-style: solid;
+  }
+  @if ($triangle-direction == left) {
+    border-color: transparent $triangle-color transparent transparent;
+    border-right-style: solid;
+  }
+ }" data-collapsed="@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) { ... }"><code>@mixin css-triangle($triangle-size, $triangle-color, $triangle-direction) { ... }</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_mixins.scss#L14-L41" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Creates a CSS triangle, which can be used for dropdown arrows, dropdown pips, and more. Use this mixin inside a <code>&amp;::before</code> or <code>&amp;::after</code> selector, to attach the triangle to an existing element.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$triangle-size</code></th><td data-label="desc"><p>Width of the triangle.</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$triangle-color</code></th><td data-label="desc"><p>Color of the triangle.</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$triangle-direction</code></th><td data-label="desc"><p>Direction the triangle points. Can be <code>up</code>, <code>right</code>, <code>down</code>, or <code>left</code>.</p></td><td data-label="type"><code>Keyword</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#mixin-button-dropdown"><code>button-dropdown</code></a></li></ul></section><section class="main__item container item" id="functions-mixin-disable-mouse-outline"><h3 class="item__heading"><a class="item__name" href="#mixin-disable-mouse-outline">disable-mouse-outline</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin disable-mouse-outline() { 
+  [data-whatinput=&#39;mouse&#39;] &amp; {
+    outline: 0;
+  }
+ }" data-collapsed="@mixin disable-mouse-outline() { ... }"><code>@mixin disable-mouse-outline() { ... }</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_mixins.scss#L44-L48" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Removes the focus ring around an element when a mouse input is detected.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">general</div></h1><section class="main__sub-section" id="undefined-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="undefined-variable-global-font-size"><h3 class="item__heading"><a class="item__name" href="#variable-global-font-size">global-font-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-font-size: 100% !default;</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L12-L12" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Font size attribute applied to <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code>. We use 100% by default so the value is inherited from the user&#39;s browser settings.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="undefined-variable-global-width"><h3 class="item__heading"><a class="item__name" href="#variable-global-width">global-width</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-width: rem-calc(1200) !default;</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L16-L16" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global width of your site. Used by the grid to determine row width.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="undefined-variable-global-lineheight"><h3 class="item__heading"><a class="item__name" href="#variable-global-lineheight">global-lineheight</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-lineheight: 1.5 !default;</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L20-L20" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Default line height for all type. <code>$global-lineheight</code> is 24px while <code>$global-font-size</code> is 16px</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="undefined-variable-primary-color"><h3 class="item__heading"><a class="item__name" href="#variable-primary-color">primary-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$primary-color: #2199e8 !default;</code></pre><span class="color-preview--block" style="background: #2199e8"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L24-L24" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Primary color for interactive components like links and buttons.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-secondary-color"><h3 class="item__heading"><a class="item__name" href="#variable-secondary-color">secondary-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$secondary-color: #777 !default;</code></pre><span class="color-preview--block" style="background: #777"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L28-L28" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Secondary color, used with components that support the <code>.secondary</code> class.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-success-color"><h3 class="item__heading"><a class="item__name" href="#variable-success-color">success-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$success-color: #3adb76 !default;</code></pre><span class="color-preview--block" style="background: #3adb76"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L32-L32" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color to indicate a positive status or action, used with the <code>.success</code> class.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-warning-color"><h3 class="item__heading"><a class="item__name" href="#variable-warning-color">warning-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$warning-color: #ffae00 !default;</code></pre><span class="color-preview--block" style="background: #ffae00"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L36-L36" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color to indicate a caution status or action, used with the <code>.warning</code> class.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-alert-color"><h3 class="item__heading"><a class="item__name" href="#variable-alert-color">alert-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$alert-color: #ec5840 !default;</code></pre><span class="color-preview--block" style="background: #ec5840"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L40-L40" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color to indicate a negative status or action, used with the <code>.alert</code> class.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-light-gray"><h3 class="item__heading"><a class="item__name" href="#variable-light-gray">light-gray</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$light-gray: #e6e6e6 !default;</code></pre><span class="color-preview--block" style="background: #e6e6e6"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L44-L44" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color used for light gray UI items.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-medium-gray"><h3 class="item__heading"><a class="item__name" href="#variable-medium-gray">medium-gray</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$medium-gray: #cacaca !default;</code></pre><span class="color-preview--block" style="background: #cacaca"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L48-L48" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color used for medium gray UI items.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-dark-gray"><h3 class="item__heading"><a class="item__name" href="#variable-dark-gray">dark-gray</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$dark-gray: #8a8a8a !default;</code></pre><span class="color-preview--block" style="background: #8a8a8a"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L52-L52" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color used for dark gray UI items.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-black"><h3 class="item__heading"><a class="item__name" href="#variable-black">black</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$black: #0a0a0a !default;</code></pre><span class="color-preview--block" style="background: #0a0a0a"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L56-L56" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color used for black ui items.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-white"><h3 class="item__heading"><a class="item__name" href="#variable-white">white</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$white: #fefefe !default;</code></pre><span class="color-preview--block" style="background: #fefefe"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L60-L60" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color used for white ui items.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-body-background"><h3 class="item__heading"><a class="item__name" href="#variable-body-background">body-background</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$body-background: $white !default;</code></pre><span class="color-preview--block" style="background: #fefefe"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L64-L64" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Background color of the body.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-body-font-color"><h3 class="item__heading"><a class="item__name" href="#variable-body-font-color">body-font-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$body-font-color: $black !default;</code></pre><span class="color-preview--block" style="background: #0a0a0a"></span> <a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L68-L68" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Text color of the body.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="undefined-variable-body-font-family"><h3 class="item__heading"><a class="item__name" href="#variable-body-font-family">body-font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$body-font-family: &#39;Helvetica Neue&#39;, Helvetica, Roboto, Arial, sans-serif !default;</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L72-L72" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Font stack of the body.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p></section><section class="main__item container item" id="undefined-variable-body-antialiased"><h3 class="item__heading"><a class="item__name" href="#variable-body-antialiased">body-antialiased</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$body-antialiased: true !default;</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L76-L76" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Set to <code>true</code> to enable antialiased type, using the <code>-webkit-font-smoothing</code> and <code>-moz-osx-font-smoothing</code> CSS properties.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Boolean</code></p></section><section class="main__item container item" id="undefined-variable-global-margin"><h3 class="item__heading"><a class="item__name" href="#variable-global-margin">global-margin</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-margin: 1rem !default;</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L80-L80" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global value used for margin on components.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="undefined-variable-global-padding"><h3 class="item__heading"><a class="item__name" href="#variable-global-padding">global-padding</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-padding: 1rem !default;</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L84-L84" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global value used for padding on components.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="undefined-variable-global-weight-normal"><h3 class="item__heading"><a class="item__name" href="#variable-global-weight-normal">global-weight-normal</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-weight-normal: normal !default;</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L88-L88" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global font weight used for normal type.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Keyword</code> or <code>Number</code></p></section><section class="main__item container item" id="undefined-variable-global-weight-bold"><h3 class="item__heading"><a class="item__name" href="#variable-global-weight-bold">global-weight-bold</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-weight-bold: bold !default;</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L92-L92" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global font weight used for bold type.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Keyword</code> or <code>Number</code></p></section><section class="main__item container item" id="undefined-variable-global-radius"><h3 class="item__heading"><a class="item__name" href="#variable-global-radius">global-radius</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-radius: 0 !default;</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L96-L96" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global value used for all elements that have a border radius.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="undefined-variable-global-text-direction"><h3 class="item__heading"><a class="item__name" href="#variable-global-text-direction">global-text-direction</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-text-direction: ltr !default;</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L99-L99" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Sets the text direction of the CSS. Can be either <code>ltr</code> or <code>rtl</code>.</p></div></section></section><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-normalize"><h3 class="item__heading"><span class="item__access">[private]</span> <a class="item__name" href="#mixin-normalize">normalize</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin normalize() { 
+  /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+  /**
+   * 1. Set default font family to sans-serif.
+   * 2. Prevent iOS and IE text size adjust after device orientation change,
+   *    without disabling user zoom.
+   */
+
+  html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+
+  /**
+   * Remove default margin.
+   */
+
+  body {
+    margin: 0;
+  }
+
+  /* HTML5 display definitions
+     ========================================================================== */
+
+  /**
+   * Correct `block` display not defined for any HTML5 element in IE 8/9.
+   * Correct `block` display not defined for `details` or `summary` in IE 10/11
+   * and Firefox.
+   * Correct `block` display not defined for `main` in IE 11.
+   */
+
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+
+  /**
+   * 1. Correct `inline-block` display not defined in IE 8/9.
+   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+   */
+
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+  }
+
+  /**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+
+  audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+
+  /**
+   * Address `[hidden]` styling not present in IE 8/9/10.
+   * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox &lt; 22.
+   */
+
+  [hidden],
+  template {
+    display: none;
+  }
+
+  /* Links
+     ========================================================================== */
+
+  /**
+   * Remove the gray background color from active links in IE 10.
+   */
+
+  a {
+    background-color: transparent;
+  }
+
+  /**
+   * Improve readability of focused elements when they are also in an
+   * active/hover state.
+   */
+
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+
+  /* Text-level semantics
+     ========================================================================== */
+
+  /**
+   * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+   */
+
+  abbr[title] {
+    border-bottom: 1px dotted;
+  }
+
+  /**
+   * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+   */
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  /**
+   * Address styling not present in Safari and Chrome.
+   */
+
+  dfn {
+    font-style: italic;
+  }
+
+  /**
+   * Address variable `h1` font-size and margin within `section` and `article`
+   * contexts in Firefox 4+, Safari, and Chrome.
+   */
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  /**
+   * Address styling not present in IE 8/9.
+   */
+
+  mark {
+    background: #ff0;
+    color: #000;
+  }
+
+  /**
+   * Address inconsistent and variable font size in all browsers.
+   */
+
+  small {
+    font-size: 80%;
+  }
+
+  /**
+   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+   */
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  /* Embedded content
+     ========================================================================== */
+
+  /**
+   * Remove border when inside `a` element in IE 8/9/10.
+   */
+
+  img {
+    border: 0;
+  }
+
+  /**
+   * Correct overflow not hidden in IE 9/10/11.
+   */
+
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  /* Grouping content
+     ========================================================================== */
+
+  /**
+   * Address margin not present in IE 8/9 and Safari.
+   */
+
+  figure {
+    margin: 1em 40px;
+  }
+
+  /**
+   * Address differences between Firefox and other browsers.
+   */
+
+  hr {
+    box-sizing: content-box;
+    height: 0;
+  }
+
+  /**
+   * Contain overflow in all browsers.
+   */
+
+  pre {
+    overflow: auto;
+  }
+
+  /**
+   * Address odd `em`-unit font size rendering in all browsers.
+   */
+
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+
+  /* Forms
+     ========================================================================== */
+
+  /**
+   * Known limitation: by default, Chrome and Safari on OS X allow very limited
+   * styling of `select`, unless a `border` property is set.
+   */
+
+  /**
+   * 1. Correct color not being inherited.
+   *    Known issue: affects color of disabled elements.
+   * 2. Correct font properties not being inherited.
+   * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+   */
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
+    margin: 0; /* 3 */
+  }
+
+  /**
+   * Address `overflow` set to `hidden` in IE 8/9/10/11.
+   */
+
+  button {
+    overflow: visible;
+  }
+
+  /**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+   * Correct `select` style inheritance in Firefox.
+   */
+
+  button,
+  select {
+    text-transform: none;
+  }
+
+  /**
+   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+   *    and `video` controls.
+   * 2. Correct inability to style clickable `input` types in iOS.
+   * 3. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
+   */
+
+  button,
+  html input[type=&quot;button&quot;], /* 1 */
+  input[type=&quot;reset&quot;],
+  input[type=&quot;submit&quot;] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+  }
+
+  /**
+   * Re-set default cursor for disabled elements.
+   */
+
+  button[disabled],
+  html input[disabled] {
+    cursor: default;
+  }
+
+  /**
+   * Remove inner padding and border in Firefox 4+.
+   */
+
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  /**
+   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+
+  input {
+    line-height: normal;
+  }
+
+  /**
+   * It&#39;s recommended that you don&#39;t attempt to style these elements.
+   * Firefox&#39;s implementation doesn&#39;t respect box-sizing, padding, or width.
+   *
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
+
+  input[type=&quot;checkbox&quot;],
+  input[type=&quot;radio&quot;] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+
+  /**
+   * Fix the cursor style for Chrome&#39;s increment/decrement buttons. For certain
+   * `font-size` values of the `input`, it causes the cursor style of the
+   * decrement button to change from `default` to `text`.
+   */
+
+  input[type=&quot;number&quot;]::-webkit-inner-spin-button,
+  input[type=&quot;number&quot;]::-webkit-outer-spin-button {
+    height: auto;
+  }
+
+  /**
+   * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+   */
+
+  input[type=&quot;search&quot;] {
+    -webkit-appearance: textfield; /* 1 */
+    box-sizing: content-box; /* 2 */
+  }
+
+  /**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */
+
+  input[type=&quot;search&quot;]::-webkit-search-cancel-button,
+  input[type=&quot;search&quot;]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  /**
+   * Define consistent border, margin, and padding.
+   */
+
+  fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+  }
+
+  /**
+   * 1. Correct `color` not being inherited in IE 8/9/10/11.
+   * 2. Remove padding so people aren&#39;t caught out if they zero out fieldsets.
+   */
+
+  legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+  }
+
+  /**
+   * Remove default vertical scrollbar in IE 8/9/10/11.
+   */
+
+  textarea {
+    overflow: auto;
+  }
+
+  /**
+   * Don&#39;t inherit the `font-weight` (applied by a rule above).
+   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+   */
+
+  optgroup {
+    font-weight: bold;
+  }
+
+  /* Tables
+     ========================================================================== */
+
+  /**
+   * Remove most spacing between table cells.
+   */
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  td,
+  th {
+    padding: 0;
+  }
+ }" data-collapsed="@mixin normalize() { ... }"><code>@mixin normalize() { ... }</code></pre><a href="https://github.com/conrad-ko/zeki/utils/_global.scss#L195-L620" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Loads normalize.css.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --><span class="project-info__name">Sass</span><!-- Version --> <span class="project-info__version">- v0.0.1</span><!-- License --></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>
