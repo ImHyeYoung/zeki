@@ -1,4 +1,4 @@
 node_modules
 .idea/
-origin/
 app/dist
+app/origin
